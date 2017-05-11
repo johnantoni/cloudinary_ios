@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C5E4FA1EC4FDAF00D84649 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C5E4F91EC4FDAF00D84649 /* Alamofire.framework */; };
 		2936A50D1E1D92A5009B7FAF /* Cloudinary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2936A50C1E1D92A5009B7FAF /* Cloudinary.podspec */; };
 		2936A58E1E1EFF95009B7FAF /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 2936A58C1E1EFF95009B7FAF /* LICENCE */; };
 		2936A58F1E1EFF95009B7FAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2936A58D1E1EFF95009B7FAF /* README.md */; };
@@ -113,6 +114,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12C5E4F91EC4FDAF00D84649 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		2936A50C1E1D92A5009B7FAF /* Cloudinary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cloudinary.podspec; sourceTree = "<group>"; };
 		2936A58C1E1EFF95009B7FAF /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		2936A58D1E1EFF95009B7FAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -225,12 +227,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C5E4FA1EC4FDAF00D84649 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C5E4F81EC4FDAF00D84649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C5E4F91EC4FDAF00D84649 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2936A58B1E1EFF72009B7FAF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +411,7 @@
 				369FB3481C79D360003E81B6 /* Cloudinary */,
 				3696FBF21C8C6A3D00DE9568 /* CloudinaryTests */,
 				369FB3471C79D360003E81B6 /* Products */,
+				12C5E4F81EC4FDAF00D84649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1023,7 +1035,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = GenerateCLDCryptoModule.swift;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Cloudinary/Frameworks/CLDCrypto/$(PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Cloudinary/Frameworks/CLDCrypto/$(PLATFORM_NAME)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Cloudinary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1055,7 +1070,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EXCLUDED_SOURCE_FILE_NAMES = GenerateCLDCryptoModule.swift;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Cloudinary/Frameworks/CLDCrypto/$(PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Cloudinary/Frameworks/CLDCrypto/$(PLATFORM_NAME)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Cloudinary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
