@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		12C5E4FA1EC4FDAF00D84649 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C5E4F91EC4FDAF00D84649 /* Alamofire.framework */; };
-		2936A50D1E1D92A5009B7FAF /* Cloudinary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2936A50C1E1D92A5009B7FAF /* Cloudinary.podspec */; };
 		2936A58E1E1EFF95009B7FAF /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 2936A58C1E1EFF95009B7FAF /* LICENCE */; };
 		2936A58F1E1EFF95009B7FAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2936A58D1E1EFF95009B7FAF /* README.md */; };
 		2944B6731E2FB613003AB794 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 2944B6721E2FB613003AB794 /* CHANGELOG.md */; };
-		29CEE1A31E34A55600A2629D /* GenerateCLDCryptoModule in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE1A11E34A55600A2629D /* GenerateCLDCryptoModule */; };
 		29CEE1A41E34A55600A2629D /* GenerateCLDCryptoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE1A21E34A55600A2629D /* GenerateCLDCryptoModule.swift */; };
 		362CB7721CA2EA9900C26E74 /* CLDNetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CB7711CA2EA9900C26E74 /* CLDNetworkDelegate.swift */; };
 		362CB7771CA41D0F00C26E74 /* CLDBuildParamsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CB7761CA41D0F00C26E74 /* CLDBuildParamsUtils.swift */; };
@@ -757,8 +755,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2936A58E1E1EFF95009B7FAF /* LICENCE in Resources */,
-				29CEE1A31E34A55600A2629D /* GenerateCLDCryptoModule in Resources */,
-				2936A50D1E1D92A5009B7FAF /* Cloudinary.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
